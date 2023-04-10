@@ -1,0 +1,62 @@
+.space{
+    background-image: url(../images/background-image.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+.saturn{
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.rocket{
+    position: relative;
+    animation-name: moverocket;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.rocket2{
+    position: absolute;
+}
+.mars{
+    position: absolute;
+}
+.ufo{
+    position: absolute;
+}
+.astronaut{
+    position: relative;
+    animation-name: movehim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.star{
+    position: absolute;
+}
+
+@keyframes movehim {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+/* .divv {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+  } */
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+  @keyframes movehim {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 0px; left: 100px;}
+    50%  {top: 100px; left: 100px;}
+    75%  {top: 100px; left: 0px;}
+    100% {top: 0px; left: 0px;}
+  }
